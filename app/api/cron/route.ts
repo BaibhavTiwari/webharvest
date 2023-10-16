@@ -74,7 +74,7 @@ export async function GET(request: Request) {
       };
 
       const emailContent = await generateEmailBody(productInfo, emailNotifType);
-      const userEmails = product.users.map((user) => user.email);
+      const userEmails = product.users.map((user: any) => user.email);
 
       return sendEmail(emailContent, userEmails);
     });
