@@ -10,7 +10,7 @@ import {
   getEmailNotifType,
 } from "@/lib/utils";
 
-export const maxDuration = 1000;
+export const maxDuration = 3;
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
