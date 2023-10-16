@@ -67,11 +67,11 @@ export async function scarpeAmazonProduct(url: string) {
       category: "category",
       reviewsCount: 100,
       stars: 4.5,
-      isOutOFStock: outOfStock,
+      isOutOfStock: outOfStock,
       description,
       lowestPrice: Number(currentPrice) || Number(originalPrice),
       highestPrice: Number(originalPrice) || Number(currentPrice),
-      average: Number(currentPrice) || Number(originalPrice),
+      averagePrice: Number(currentPrice) || Number(originalPrice),
     };
     return data;
   } catch (error: any) {
