@@ -11,7 +11,7 @@ import Product from "@/lib/models/product.model";
 import { scarpeAmazonProduct } from "@/lib/scraper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 
-export const maxDuration = 300;
+export const maxDuration = 1000;
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
